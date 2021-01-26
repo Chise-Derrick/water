@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+td:nth-child(2){
+  width: 20px;
+}
+
+/*This is the payload cell*/
+
+td:nth-child(8){
+  position: relative;
+  min-width: 205px;
+  padding-top: 20px;
+}
+
+/*th:nth-child(8){
+  height: 30px;
+  min-width: 205px;
+  padding-top: 20px;
+  background-color: grey;
+}
+
+th:nth-child(8) {
+  height: 30px;
+  min-width: 105px;
+  padding-top: 20px;
+  background-color: white;
+}*/
+
+th {
+  background: white;
+  position: sticky;
+  top: 50px; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  text-align: left;
+  position: relative;
+  width: 100%;
+  font-size: calc(4px + 0.6vw);
+  font-family: Roboto, sans-serif;
+  margin-top: 60px;
+  border-spacing: 0 !important;
+}
+
+tbody {
+  margin-top: 40px;
+}
+
+th, td {
+  padding: 0.25rem;
+  border: 1px solid #E3E3E3;
+}
+
+th {
+  background: white;
+  z-index: 999;
+  position: sticky;
+  margin-bottom: 40px;
+  height: 50px;
+  text-transform: capitalize;
+  margin-top: 65px; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+}
+
+.table__body {
+  position: relative;
+}
