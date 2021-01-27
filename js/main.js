@@ -137,7 +137,9 @@ function json2Table(json) {
           "transmitted<br>at" +
           `<div style='margin-left: 40px'><a><strong>${config.orderBy}</strong></a></div>`;
       }
-
+      if (col === "direction") {
+        col = "dir";
+      }
       if (col == "payloadDecoded") {
         let payloadProp = PayloadButtons();
         return `<th><div class="index__iconContainer">

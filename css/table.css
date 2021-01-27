@@ -12,11 +12,20 @@ td:nth-child(2){
   width: 20px;
 }
 
+td:nth-child(3){
+  width: 55px;
+}
+
+td:nth-child(3), td:nth-child(3){
+  width: 45px;
+}
+
+
 /*This is the payload cell*/
 
 td:nth-child(8){
   position: relative;
-  min-width: 205px;
+  min-width: 180px;
   padding-top: 20px;
 }
 
@@ -51,9 +60,10 @@ th {
 }
 
 table {
+
   text-align: left;
   position: relative;
-  width: 100%;
+  width: 100vw;
   font-size: calc(4px + 0.6vw);
   font-family: Roboto, sans-serif;
   margin-top: 60px;
@@ -61,6 +71,7 @@ table {
 }
 
 tbody {
+
   margin-top: 40px;
 }
 
