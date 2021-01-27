@@ -29,7 +29,7 @@ ul {
   flex-direction: row;
   position: absolute;
   top: 16px;
-  right: 56px;
+  left: 300px;
   font-family: Roboto, sans-serif;
 }
 
