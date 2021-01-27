@@ -30,7 +30,7 @@ const createOxygen = {
     return `
     position: absolute;
     bottom: 0;
-          background-color: '#4169E1';
+          background-color: blue;
           width: 4px;
           height: ${level}%;
                     border-radius: 0 0 10px 10px;
@@ -41,12 +41,18 @@ const createOxygen = {
 function OxygenLevel(jwtToken, prop) {
   return `
 <div style="${createOxygen.iconContain}">
-          <div style="${createOxygen.oxygenCase}">
+          <div style="position: absolute;
+          top: 2px;
+          left: 6px;
+          border: 2px solid blue;
+          width: 4px;
+          height: 8px;
+          border-radius: 10px;">
           <div style="${createOxygen.oxygenLevel(
             jwtToken[prop].value
           )}"></div><div style="${createOxygen.oxygenEnd}">2
           </div>
-</div></div>'
+</div></div>
     `;
 }
 

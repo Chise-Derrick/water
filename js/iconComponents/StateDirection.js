@@ -59,7 +59,7 @@ function StateDirection(jwtToken, prop) {
 <div style="${createStateDirection.iconContain}">
           <div style="${createStateDirection.stateCase(jwtToken[prop])}">
           <div style="${createStateDirection.stateStart}"></div>
-          </div></div>'
+          </div></div>
     `;
 }
 

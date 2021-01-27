@@ -21,50 +21,25 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/table.css">
 
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <header class="index__header">
-    <ul class="index__headerPages">
-
-      <span class="index__paginationHeader">
-        Page
-      </span>
-        <li class="pageLi active">
-          1
-        </li>
-      <li class="pageLi">
-          2
-        </li>
-      <li class="pageLi">
-          3
-        </li>
-      <li class="pageLi">
-          4
-        </li>
-      <li class="pageLi">
-          5
-        </li>
-      <li class="pageLi">
-          6
-        </li>
-      <li class="pageLi">
-          7
-        </li>
-      <li class="pageLi">
-          8
-        </li>
-      <li class="pageLi">
-          9
-        </li>
-      <li class="pageLi">
-          10
-        </li>
+    <img class="index__headerImage" src="./img/logo-high-res.png" />
 
 
+      <div class="index__pageModifier">
+        <div class="index__pageLeft changePage">-</div>
+        <div id="page" class="index__pageNumber ng-binding"></div>
+        <div class="index__pageRight changePage">+</div>
+      </div>
 
-    </ul>
+
+    <div id="progressBar">
+      <div id="barStatus"></div>
+    </div>
   </header>
   <main>
   <div id="output" class="table-container"></div>

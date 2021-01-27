@@ -66,23 +66,7 @@ function PayloadButtons() {
   };
 
   return `
-<div style="${createIcons.allIcons}">
-    <div style="${createIcons.iconContain}" onmouseover="handleMouseOver(
-    'therm'
-  )" onclick='handleClick('therm')">
-       <div style="${createIcons.thermometerCase}">
-          <div style="${createIcons.thermometerEnd}">
-          </div>
-       </div>
-    </div>
-    <div style="${createIcons.iconContain}">
-       <div style="${createIcons.oxygenCase}">
-          <div style="${createIcons.oxygenEnd}">2
-          </div>
-       </div>
-    </div>
-
-</div>'
+'
     `;
 }
 

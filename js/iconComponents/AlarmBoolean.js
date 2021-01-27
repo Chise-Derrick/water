@@ -2,17 +2,25 @@ const createAlarmBoolean = {
   iconContain: `
     background-color: white;
     width: 22px;
-    height: 16px;
+    height: 17px;
           position: absolute;
-          top: 1px;
+          top: 0;
           left: 91px;
           border: 1px solid lightgrey;
   `,
+  alarmCase: `
+          position: absolute;
+          top: -1px;
+          left: 0;
+          width: 11px;
+          height: 9px;
+          border-radius: 0 2px 2px 0;
+`,
   alarmStart: `
           position: relative;
-          background-color: '#555';
-          bottom: 14px;
-          left: 5px;
+          background-color: grey;
+          bottom: 12px;
+          left: 6px;
           width: 1px;
           height: 4px;
           border-left: none;
@@ -20,8 +28,8 @@ const createAlarmBoolean = {
 `,
   alarmEnd: `
           position: relative;
-          background-color: '#555';
-          bottom: 18px;
+          background-color: grey;
+          bottom: 16px;
           left: 16px;
           width: 1px;
           height: 4px;
@@ -34,11 +42,11 @@ const createAlarmBoolean = {
       levelColor = "#F02020";
     }
     return `
-    margin-top: 6px;
+    margin-top: 5px;
     margin-left: 5px;
           border: 1px solid '#555';
           background-color: ${levelColor};
-          height: 7px;
+          height: 9px;
           width: 12px;
           border-radius: 15px 15px 0 0;
 `;
@@ -46,14 +54,11 @@ const createAlarmBoolean = {
 };
 
 function AlarmBoolean(jwtToken, prop) {
-  return `
-<div style="${createAlarmBoolean.iconContain}">
+  return `<div style="${createAlarmBoolean.iconContain}">
           <div style="${createAlarmBoolean.alarmCase}">
-
           <div style="${createAlarmBoolean.alarmLevel(jwtToken[prop])}"></div>
           <div style="${createAlarmBoolean.alarmStart}"></div>
-          <div style="${createAlarmBoolean.alarmEnd}"></div></div></div>'
-    `;
+          <div style="${createAlarmBoolean.alarmEnd}"></div></div></div>`;
 }
 
 export default AlarmBoolean;
